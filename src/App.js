@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cryptocurrencies from "./component/Cryptocurrencies/Cryptocurrencies";
+import Earn from "./component/Earn/Earn";
+import Features from "./component/Features/Features";
+import HashCard from "./component/HashCard/HashCard";
+import Header from "./component/Header/Header";
+import Numbers from "./component/Numbers/Numbers";
+import SectionOne from "./component/SectionOne/SectionOne";
+import WhyCrappo from "./component/WhyCrappo/WhyCrappo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <SectionOne />
+      <Numbers/>
+      <WhyCrappo/>
+      <Earn/>
+      <HashCard/>
+      <Cryptocurrencies/>
+      <Features/>
+      sdfgfggdfgcfghgh
+      <Earn/>
+    </>
   );
 }
 

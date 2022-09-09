@@ -1,0 +1,276 @@
+.feature-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #2b076e;
+}
+
+.feature-header {
+  width: 758px;
+  height: 120px;
+  margin: auto;
+  margin-top: 2em;
+}
+.feature-header h2 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+.all-features {
+  margin-top: 6em;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+.all-features .feature:nth-child(even) {
+  flex-direction: row-reverse;
+  gap: 100px;
+  margin-right: auto;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 5, 105, 0) 46.14%,
+    rgba(51, 7, 133, 0.7) 100%
+  );
+}
+.feature {
+  /* background-color: yellowgreen; */
+  display: flex;
+  width: 1200px;
+}
+.feature-image-smart-invest {
+  /* background-color: rebeccapurple; */
+  margin-left: auto;
+  width: 580px;
+  height: 427px;
+}
+.feature-image-smart-invest img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feature-image-stats {
+  width: 710px;
+  height: 453px;
+}
+.feature-image-stats img {
+  width: 100%;
+  height: 100%;
+}
+.feature-image-all-currency {
+  /* background-color: orange; */
+  margin-left: auto;
+  width: 682px;
+  height: 334px;
+}
+.feature-image-all-currency img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.feature-text {
+  width: 500px;
+  /* background-color: red; */
+  height: 350px;
+}
+.feature-text h3 {
+  width: 100%;
+  height: fit-content;
+  text-transform: capitalize;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 0.4em;
+}
+.feature-text p {
+  width: 408px;
+  height: fit-content;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #e0e0e0;
+  margin-bottom: 1em;
+}
+.feature-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 40px;
+  background: var(--buttonColor);
+  border-radius: 32px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+.feature-btn p {
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-family: var(--font);
+  font-size: 18px;
+  margin: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.mining-container {
+  display: grid;
+  margin-top: 5em;
+  width: 100%;
+  height: 392px;
+
+  background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
+}
+.mining-card {
+  display: grid;
+  width: 1200px;
+  height: 216px;
+  background: #3671e9;
+  border-radius: 16px;
+  margin: auto;
+  /* margin-bottom: 3em; */
+}
+.mining-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 40px; */
+  /* background-color: red; */
+  margin: 0 auto;
+  /* margin: 5em; */
+}
+.start-mining {
+  width: 501px;
+  height: fit-content;
+  /* background-color: purple; */
+}
+.start-mining h3 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+.start-mining p {
+  width: 348px;
+  height: 56px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.enter-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #0d0d2b; */
+  width: 556px;
+  height: 55px;
+}
+input {
+  width: 374px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.enter-email input:focus {
+  border: none;
+}
+.enter-email-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 14px 32px; */
+  width: 152px;
+  height: 55px;
+  border: none;
+  background-color: white;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.enter-email-button p {
+  width: 88px;
+  /* height: 27px; */
+
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+
+  text-align: center;
+  color: #0d0d2b;
+}
+@media screen and (min-width: 100px) and (max-width: 1220px) {
+  .feature-header {
+    width: 90%;
+  }
+  .feature-header h2 {
+    font-size: 24px;
+  }
+  .all-features {
+    flex-direction: column;
+    /* background-color: green; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3em;
+    gap: 70px;
+  }
+  .all-features .feature:nth-child(even) {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 30px;
+  }
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: purple; */
+    width: 100%;
+    gap: 30px;
+  }
+  .feature-text {
+    /* background-color: orange; */
+    width: 100%;
+    height: fit-content;
+  }
+  .feature-text p {
+    width: fit-content;
+  }
+  .feature-image-smart-invest,
+  .feature-image-all-currency {
+    margin-left: 0;
+    width: 100%;
+    height: fit-content;
+  }
+  .feature-image-stats {
+    width: 100%;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .all-features {
+    /* background-color: red; */
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 100%;
+  }
+}

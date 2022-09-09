@@ -1,0 +1,43 @@
+.earn-container {
+  width: 741px;
+  height: 138px;
+  /* background-color: orange; */
+  margin: 0 auto;
+  margin-top: 8em;
+  text-align: center;
+}
+.earn-container h2 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+.earn-container p {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #E0E0E0;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1220px) {
+    .earn-container{ 
+        /* background-color: red; */
+        width: 90%;
+        height: fit-content;
+    }
+    .earn-container h2 { 
+        font-size: 24px;
+    }
+    .earn-container p{ 
+        /* background-color: red; */
+        padding: 1.5em;
+        font-size: 12px;
+    }
+}

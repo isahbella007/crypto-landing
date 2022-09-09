@@ -1,0 +1,172 @@
+.hash-card-container {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 16px;filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+}
+.enter-hash-rate-container {
+  width: 942px;
+  height: 155px;
+  border-radius: 16px 16px 0px 0px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.enter-hash-rate-container input {
+  width: 403px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 20px;
+}
+.enter-hash-rate-container input::placeholder {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0d0d2b;
+  mix-blend-mode: normal;
+  width: 188px;
+  height: 30px;
+}
+.enter-hash-rate-container input:focus {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.enter-hash-rate-container select {
+  width: 200px;
+  height: 42px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 20px;
+}
+.calculate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 40px;
+  background: var(--buttonColor);
+  border-radius: 32px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+.calculate-btn p {
+  width: 83px;
+  height: 27px;
+  color: white;
+  font-family: var(--font);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+}
+.estimated-revenue-container {
+  width: 942px;
+  height: 216px;
+  border-radius: 16px 16px 16px 16px;
+  /* background-color: red; */
+}
+.estimated-revenue-container p {
+  margin-left: 33px;
+}
+.estimated-text {
+  width: 260px;
+  height: 24px;
+  font-size: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: #3671e9;
+}
+.result-container {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 624px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #0d0d2b;
+}
+.result-container span {
+  color: var(--buttonColor);
+}
+.grey-text {
+  margin-top: 30px;
+  width: 516px;
+  height: 28px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color:rgb(107, 114, 128);
+}
+@media screen and (min-width: 100px) and (max-width: 1220px) {
+    .hash-card-container{ 
+        width: 90%;
+        /* height: fit-content; */
+    }
+    .enter-hash-rate-container{ 
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        gap: 30px;
+        width: 100%;
+        height: fit-content;
+        /* background-color: orange; */
+        margin-bottom: 1.8em;
+    }
+    .enter-hash-rate-container input, .enter-hash-rate-container select{ 
+        width: 90%;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .calculate-btn{ 
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .estimated-revenue-container{
+        /* background-color: red; */
+        width: 100%;
+        height: fit-content;
+    }
+    .estimated-revenue-container p, .result-container{ 
+        margin-left: 20px;
+    }
+    .estimated-text{ 
+        width: fit-content;
+        height: fit-content;
+    }
+    .result-container{ 
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: black; */
+        width: fit-content;
+        height: fit-content;
+        font-size: 24px ;
+        gap: 10px;
+    }
+    .grey-text{ 
+        /* background-color: purple; */
+        margin-top: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+}

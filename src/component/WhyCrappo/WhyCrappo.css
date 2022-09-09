@@ -1,0 +1,88 @@
+.why-crappo-container {
+  margin-top: 4em;
+  margin-left: 4.2em;
+  margin-right: 9em;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  /* width: 70%; */
+  /* background-color: red; */
+  gap: 20px;
+}
+.why-crappo-image {
+  height: 450px;
+  width: 700px;
+  /* background-color: orange; */
+}
+.why-crappo-image img {
+  width: 100%;
+  height: 100%;
+}
+.why-crappo-text-container {
+  /* background-color: rebeccapurple; */
+  width: 480px;
+  height: fit-content;
+  margin-left: 5em; /* one way to make the image move */
+}
+.crappo-header {
+  /* background-color: orange; */
+  width: 480px;
+}
+.crappo-header h2 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin-bottom: 0.4em;
+  color: white;
+}
+.crappo-text {
+  width: 350px;
+}
+.crappo-text p {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #e0e0e0;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 100px) and (max-width: 1220px) {
+  .why-crappo-container {
+    flex-direction: column;
+    /* background-color: orangered; */
+    margin-left: 1em;
+    margin-right: 2em;
+    width: 90%;
+  }
+  .why-crappo-image {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+  }
+  .why-crappo-text-container{
+    /* background-color: blue; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .crappo-header{ 
+    /* background-color: red; */
+    width: fit-content;
+  }
+  .crappo-text{ 
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1440px) {
+    .why-crappo-container{
+      padding-left: 150px;
+      padding-right: 150px;
+      height: fit-content;
+      /* background-color: green; */
+    }
+  }
