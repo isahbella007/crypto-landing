@@ -19,8 +19,6 @@ function App() {
       <HashCard/>
       <Cryptocurrencies/>
       <Features/>
-      sdfgfggdfgcfghgh
-      <Earn/>
     </>
   );
 }
