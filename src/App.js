@@ -2,6 +2,7 @@ import "./App.css";
 import Cryptocurrencies from "./component/Cryptocurrencies/Cryptocurrencies";
 import Earn from "./component/Earn/Earn";
 import Features from "./component/Features/Features";
+import Footer from "./component/Footer/Footer";
 import HashCard from "./component/HashCard/HashCard";
 import Header from "./component/Header/Header";
 import Numbers from "./component/Numbers/Numbers";
@@ -19,6 +20,7 @@ function App() {
       <HashCard/>
       <Cryptocurrencies/>
       <Features/>
+      <Footer/>
     </>
   );
 }

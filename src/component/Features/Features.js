@@ -67,16 +67,14 @@ const Features = () => {
             </div>
         </div>
         <div className="mining-container">
-            <div className="mining-card">
-                <div className="mining-details">
-                    <div className="start-mining">
-                        <h3>Start mining now</h3>
-                        <p>Join now with CRAPPO to get the latest news and start mining now</p>
-                    </div>
-                    <div className="enter-email">
-                        <input placeholder="Enter your email"></input>
-                        <button className="enter-email-button"><p>Subscribe</p></button>
-                    </div>
+            <div className="mining-box">
+                <div className="start-mining-container">
+                    <h3>Start mining now</h3>
+                    <p>Join now with CRAPPO to get the latest news and start mining now</p>
+                </div>
+                <div className="email-container">
+                    <input placeholder="Enter your email"></input>
+                    <button className="subscribe-btn"><p>Subscribe</p></button>
                 </div>
             </div>
         </div>

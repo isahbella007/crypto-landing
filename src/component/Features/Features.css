@@ -125,38 +125,35 @@
   font-weight: 700;
   font-style: normal;
 }
-.mining-container {
-  display: grid;
-  margin-top: 5em;
-  width: 100%;
-  height: 392px;
 
-  background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
+.mining-container {
+  margin-top: 6em;
+  height: 392px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
-.mining-card {
-  display: grid;
+.mining-box {
   width: 1200px;
   height: 216px;
-  background: #3671e9;
-  border-radius: 16px;
-  margin: auto;
-  /* margin-bottom: 3em; */
-}
-.mining-details {
+  background-color: rgb(54, 113, 233);
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  /* gap: 40px; */
-  /* background-color: red; */
-  margin: 0 auto;
-  /* margin: 5em; */
+  align-items: center;
 }
-.start-mining {
+.start-mining-container {
   width: 501px;
-  height: fit-content;
-  /* background-color: purple; */
+  height: 120px;
+  margin-left: 2em;
 }
-.start-mining h3 {
+.start-mining-container h3 {
+  width: 501px;
+  height: 48px;
   font-family: var(--font);
   font-style: normal;
   font-weight: 700;
@@ -165,10 +162,10 @@
   color: #ffffff;
   margin-bottom: 0.5em;
 }
-.start-mining p {
+.start-mining-container p {
   width: 348px;
   height: 56px;
-  font-family: var(--font);
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -176,49 +173,53 @@
   letter-spacing: 0.01em;
   color: #ffffff;
 }
-.enter-email {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: #0d0d2b; */
-  width: 556px;
+.email-container {
+  margin-right: 2em;
+  width: fit-content;
   height: 55px;
-}
-input {
-  width: 374px;
-  height: 35px;
-  border: none;
-  border-bottom: 1px solid #e0e0e0;
-}
-.enter-email input:focus {
-  border: none;
-}
-.enter-email-button {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  /* padding: 14px 32px; */
+  gap: 60px;
+}
+.email-container input {
+  width: 403px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 20px;
+  background: none;
+}
+.email-container input::placeholder {
+  font-family: var(--font);
+  color: white;
+}
+.subscribe-btn {
   width: 152px;
   height: 55px;
-  border: none;
-  background-color: white;
+  background: #ffffff;
   border-radius: 32px;
   cursor: pointer;
+  border: none;
+  outline: none;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.enter-email-button p {
-  width: 88px;
-  /* height: 27px; */
-
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-
-  text-align: center;
+.subscribe-btn p {
+  width: 83px;
+  height: 27px;
   color: #0d0d2b;
+  font-family: var(--font);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
 }
+
 @media screen and (min-width: 100px) and (max-width: 1220px) {
   .feature-header {
     width: 90%;
@@ -264,6 +265,42 @@ input {
   .feature-image-stats {
     width: 100%;
     height: fit-content;
+  }
+  .mining-container {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 5em;
+
+    
+  }
+  .mining-box {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 40px;
+  }
+  .start-mining-container{ 
+    width: 100%;
+    margin-left: 0em;
+    height: fit-content;
+    margin-bottom: 0.4em;
+  }
+  .start-mining-container p, .start-mining-container h3{
+    width: 100%;
+  }
+  .email-container{ 
+    width: 100%;
+    flex-direction: column;
+    margin-right: 0em;
+    height: fit-content;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 1em;
+  }
+  .email-container input{ 
+    width: 100%;
+    
   }
 }
 @media screen and (min-width: 1440px) {

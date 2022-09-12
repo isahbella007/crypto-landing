@@ -1,0 +1,139 @@
+.footer-container {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--background-color);
+  
+}
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+
+
+.footer-quick-link,
+.resources {
+  width: 200px;
+  height: 244px;
+}
+
+.footer-quick-link h3,
+.resources h3,
+.payment-systems h2 {
+  width: 200px;
+  height: 30px;
+  left: 426px;
+  top: 80px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+.footer-quick-link p,
+.resources p {
+  width: 200px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.footer-quick-link p:hover,
+.resources p:hover {
+  color: var(--buttonColor);
+}
+.payment-systems {
+  width: fit-content;
+  height: 244px;
+  /* background-color: green; */
+}
+.payment-card {
+  margin-top: 3.8em;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.footer-bottom {
+    display: flex;
+    /* justify-content: space-between;
+    margin-left: 3.9em;
+    margin-right: 3.9em; */
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+.footer-bottom p {
+  width: 391px;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 248px;
+  height: 24px;
+}
+.socials .icon{ 
+    color: white;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1220px) {
+    .footer-container{ 
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer-main{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-image{ 
+        margin-bottom: 1em;
+    }
+    .footer-quick-link, .resources{ 
+        text-align: center;
+        height: fit-content;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .payment-systems{ 
+        text-align: center;
+        height: fit-content;
+        margin-top: 2em;
+    }
+    .payment-card{ 
+        /* margin-top: 1em; */
+    }
+    .payment-systems h2{ 
+        width: fit-content;
+    }
+    .footer-bottom{ 
+        /* width: 90%; */
+        flex-direction: column;
+        margin-left: 0em;
+        margin-right: 0em;
+        align-items: center; 
+        gap: 10px;
+    }
+    .footer-bottom p{ 
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .socials .icon{ 
+        width: 20px;
+        height: 40px;
+    }
+}
